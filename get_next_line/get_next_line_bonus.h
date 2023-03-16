@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 19:18:36 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/01/09 16:10:18 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/01/09 16:14:20 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,8 @@
 
 # include <stdio.h>
 # include <stdlib.h>
-# include <unistd.h>
-//# include <stdio.h>
-//# include <fcntl.h>
+# include <unistd.h> 
+//# include <fcntl.h> //for the main (open, O_RDONLY)
 
 // get_next_line_bonus.c
 char	*get_next_line(int fd);

@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 12:36:28 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/01/09 15:45:43 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/01/09 16:15:05 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 
 # include <stdlib.h>
 # include <unistd.h>
-//# include <stdio.h>
-//# include <fcntl.h>
+//# include <stdio.h> //for the main (printf)
+//# include <fcntl.h> //for the main (open, O_RDONLY)
 
 // get_next_line.c
 char	*get_next_line(int fd);
