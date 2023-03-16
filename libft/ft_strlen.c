@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 15:14:45 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/22 17:14:58 by mde-avel         ###   ########.fr       */
+/*   Updated: 2022/11/30 12:46:53 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ size_t	ft_strlen(const char *str)
 {
 	size_t	i;
 
+	if (!str)
+		return (0);
 	i = 0;
 	while (str[i])
 		i++;
@@ -31,6 +33,4 @@ size_t	ft_strlen(const char *str)
 	printf("minhaf: %ld\n", ft_strlen(fio));
 	printf("strlen: %ld", strlen(fio));
 }
-if (!str)
-		return (0);
 */
