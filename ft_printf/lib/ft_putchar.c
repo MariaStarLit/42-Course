@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 13:42:28 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/29 13:43:53 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 13:13:54 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /**
  * Writes a single character & returns 1.
  */
-
 int	ft_putchar(char c)
 {
 	write(1, &c, 1);

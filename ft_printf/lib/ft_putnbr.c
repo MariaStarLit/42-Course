@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 13:42:07 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/12/06 19:11:01 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 13:13:57 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /**
  * Write the integer n & returns the number of digits printed.
  */
-
 int	ft_putnbr(int n)
 {
 	int	cont;

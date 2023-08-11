@@ -6,13 +6,13 @@
 #    By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/24 17:35:54 by mde-avel          #+#    #+#              #
-#    Updated: 2023/03/08 15:20:19 by mde-avel         ###   ########.fr        #
+#    Updated: 2023/08/11 13:15:02 by mde-avel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-CC = cc
+CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 

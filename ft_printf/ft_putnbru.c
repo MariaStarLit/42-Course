@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 12:41:53 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/12/06 19:11:34 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 13:14:48 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /**
  * Write the unsigned integer n, and return the number of digits printed.
  */
-
 int	ft_putnbru(unsigned int n)
 {
 	int	cont;

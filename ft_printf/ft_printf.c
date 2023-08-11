@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/24 17:40:41 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/01/27 17:39:54 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 13:14:26 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
  * 
  * @return The number of characters printed.
  */
-
 static int	escreve(const char ch, va_list var, size_t	len)
 {
 	if (!var)

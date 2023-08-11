@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/29 13:41:53 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/29 13:41:58 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 13:14:01 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /**
  * Writes the string s, returns the length of the writen string s.
  */
-
 int	ft_putstr(char *s)
 {
 	int	i;
