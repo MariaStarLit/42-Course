@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 19:31:26 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:59:41 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:16:13 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@
  * 
  * @return A pointer to a pointer to fist string of the array of strings.
  */
-
-static int	numpal(const char *str, char di)
+static int	n_words(const char *str, char di)
 {
 	int	i;
 	int	flag;
@@ -46,7 +45,7 @@ static int	numpal(const char *str, char di)
 	return (cont);
 }
 
-static char	*palavras(const char *s, int start, int end)
+static char	*words(const char *s, int start, int end)
 {
 	char	*pal;
 	int		i;
@@ -65,7 +64,7 @@ static char	*palavras(const char *s, int start, int end)
 	return (pal);
 }
 
-static char	**to_long(char const *s, char c, size_t len, char **res)
+static char	**separate(char const *s, char c, size_t len, char **res)
 {
 	size_t	i;
 	int		j;
@@ -80,7 +79,7 @@ static char	**to_long(char const *s, char c, size_t len, char **res)
 			flag = i;
 		else if ((s[i] == c || i == len) && flag >= 0)
 		{
-			res[j++] = palavras(s, flag, i);
+			res[j++] = words(s, flag, i);
 			flag = -1;
 		}
 		i++;
@@ -97,10 +96,10 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	len = ft_strlen(s);
-	res = malloc(sizeof(char *) * (numpal(s, c) + 1));
+	res = malloc(sizeof(char *) * (n_words(s, c) + 1));
 	if (!res)
 		return (NULL);
-	res = to_long(s, c, len, res);
+	res = separate(s, c, len, res);
 	return (res);
 }
 

@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 16:54:33 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 15:01:01 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:17:38 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ void	*ft_memchr(const void *str, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *str);
+
 //with malloc
 void	*ft_calloc(size_t nitems, size_t size);
 char	*ft_strdup(const char *str);

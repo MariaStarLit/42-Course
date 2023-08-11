@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 15:49:25 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:58:18 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:13:27 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
  * @param lst A pointer to the first link of a list.
  * @param new the new element to add to the list.
  */
-
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;

@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 18:30:36 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:58:06 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:13:17 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
  * 
  * @return 1 if the character is a digit, 0 if not.
  */
-
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

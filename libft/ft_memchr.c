@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 13:01:00 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:59:00 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:14:05 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@
  * @return A pointer to the first occurrence of the character c in the first
  * n bytes of the string pointed to, by the parameter str.
  */
-
 void	*ft_memchr(const void *str, int c, size_t n)
 {
 	size_t		i;

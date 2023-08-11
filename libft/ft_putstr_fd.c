@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 16:06:24 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:59:36 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:15:05 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /**
  * Writes the string s to the file descriptor fd.
  */
-
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;

@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:11:17 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:57:39 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:13:05 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
  * 
  * @return A pointer to the allocated memory.
  */
-
 void	*ft_calloc(size_t nitems, size_t size)
 {
 	char	*ma;

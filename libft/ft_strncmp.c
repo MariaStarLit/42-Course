@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 19:43:21 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 15:00:30 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:16:56 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  * @return The difference between the first two characters that differ in 
  * the strings s1 and s2.
  */
-
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
@@ -33,7 +32,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		if (s1[i] != s2[i])
 			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 		i++;
-	}	
+	}
 	return (0);
 }
 

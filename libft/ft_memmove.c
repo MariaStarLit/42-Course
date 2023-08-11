@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 16:03:05 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:59:17 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:14:49 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@
  * 
  * @return A pointer to the destination string.
  */
-
 void	*ft_memmove(void *dest, const void *str, size_t n)
 {
 	char		*d;

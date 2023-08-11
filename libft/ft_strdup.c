@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:48:56 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:59:49 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:16:26 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  * @return A pointer to a new string that is a duplicate of the string 
  * passed as argument.
  */
-
 char	*ft_strdup(const char *str)
 {
 	char	*res;

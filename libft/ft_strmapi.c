@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 10:31:45 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 15:00:26 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:16:53 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@
  * 
  * @return A pointer to a new string.
  */
-
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	len;

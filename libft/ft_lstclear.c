@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 15:49:21 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:58:25 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:13:33 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
  * @param del a pointer to a function that takes a single argument and frees
  * the memory of the argument.
  */
-
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;

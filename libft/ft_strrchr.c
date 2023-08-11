@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 14:21:31 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 15:00:39 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:17:04 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  * @return A pointer to the last occurrence of the character c in the 
  * string str.
  */
-
 char	*ft_strrchr(const char *str, int c)
 {
 	int	len;

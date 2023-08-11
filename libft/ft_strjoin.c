@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 15:34:22 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:59:58 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:16:32 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
  * @return A pointer to a new string that is the result of the concatenation
  * of s1 and s2.
  */
-
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*res;

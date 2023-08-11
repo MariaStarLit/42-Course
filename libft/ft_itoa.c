@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 13:44:11 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:58:14 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:13:23 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
  * 
  * @return A string of the number.
  */
-
 static int	nlen(long n)
 {
 	int	len;

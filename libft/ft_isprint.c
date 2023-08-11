@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 18:16:19 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:58:10 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:13:20 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
  * 
  * @return 1 if the character is printable, 0 if not.
  */
-
 int	ft_isprint(int c)
 {
 	if (c >= ' ' && c <= '~')

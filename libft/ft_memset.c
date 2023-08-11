@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 13:12:51 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:59:20 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:14:54 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  * 
  * @return A pointer to the beginning of the string.
  */
-
 void	*ft_memset(void *str, int c, size_t n)
 {
 	size_t	i;

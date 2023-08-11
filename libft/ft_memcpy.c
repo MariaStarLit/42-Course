@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:26:36 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:59:12 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:14:15 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  * 
  * @return A pointer to the destination string.
  */
-
 void	*ft_memcpy(void *dest, const void *str, size_t n)
 {
 	size_t		i;

@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 17:43:18 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:58:49 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:13:48 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@
  * @return A new linked list with the content of the original list, but each 
  * element has been transformed by a function.
  */
-
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),	void (*del)(void *))
 {
 	t_list	*new;

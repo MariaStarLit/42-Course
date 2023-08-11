@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 19:23:03 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:58:45 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:13:44 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
  * 
  * @return The last element of the list.
  */
-
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

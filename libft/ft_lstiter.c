@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 16:44:54 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:58:34 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:13:40 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
  * @return A new list with the content of each element of the list passed 
  * as parameter, but with the function f applied to each element.
  */
-
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*temp;

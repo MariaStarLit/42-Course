@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 15:16:47 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:57:46 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:12:56 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
  * 
  * @return the number of characters in the string.
  */
-
 int	ft_atoi(const char *str)
 {
 	long	i;

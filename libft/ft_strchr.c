@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 16:20:33 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:59:45 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:16:23 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
  * 
  * @return the string after the first occurrence of the character c in str.
  */
-
 char	*ft_strchr(const char *str, int c)
 {
 	while (*str)

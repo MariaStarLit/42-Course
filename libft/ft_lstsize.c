@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 19:01:16 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/12/14 18:13:15 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:14:01 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
  * 
  * @return The number of elements in the list.
  */
-
 int	ft_lstsize(t_list *lst)
 {
 	int		cont;

@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 13:51:40 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:59:05 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:14:12 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  * 
  * @return The difference between the two strings.
  */
-
 int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
 	size_t				i;

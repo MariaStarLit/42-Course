@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 16:43:14 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 14:59:32 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:15:03 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 /**
  * Write the integer n to the file descriptor fd.
  */
-
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)

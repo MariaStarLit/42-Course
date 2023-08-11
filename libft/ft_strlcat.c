@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 16:01:07 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 15:00:10 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:16:41 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  * 
  * @return The length of the string that was copied.
  */
-
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	i;

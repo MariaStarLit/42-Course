@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 15:01:54 by mde-avel          #+#    #+#             */
-/*   Updated: 2022/11/24 15:00:35 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:17:00 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
  * @return A pointer to the first occurrence of the substring little in 
  * the string big, or NULL if the substring is not found.
  */
-
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
