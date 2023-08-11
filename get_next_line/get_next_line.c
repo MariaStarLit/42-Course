@@ -6,12 +6,15 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 12:36:25 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/01/09 15:44:58 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:05:35 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
+
+// The function `get_next_line` reads a line from a file descriptor
+// and returns it as a string.
 char	*get_next_line(int fd)
 {
 	char		*line;

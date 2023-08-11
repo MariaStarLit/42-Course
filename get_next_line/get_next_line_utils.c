@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 12:36:21 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/01/09 14:16:58 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 18:04:08 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ size_t	ft_strlen_gnl(const char *str)
 	return (i);
 }
 
+// The function `ft_strjoin_gnl` concatenates two strings, `line`
+// and `buffer`, and returns the result.
 char	*ft_strjoin_gnl(char const *line, char const *buffer)
 {
 	char	*res;
@@ -49,7 +51,7 @@ char	*ft_strjoin_gnl(char const *line, char const *buffer)
 	{
 		res[i] = buffer[j];
 		i++;
-	}	
+	}
 	res[i] = '\0';
 	free((void *)line);
 	return (res);

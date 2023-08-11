@@ -6,12 +6,16 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 19:27:40 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/01/09 13:38:22 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/08/11 13:22:37 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line_bonus.h"
 
+/**
+ * The function "cleanbuffer" clears the contents of a character buffer.
+ * @return NULL.
+ */
 char	*cleanbuffer(char *buffer, int fd)
 {
 	int	i;
@@ -27,6 +31,10 @@ char	*cleanbuffer(char *buffer, int fd)
 	return (NULL);
 }
 
+/**
+ * The function `ft_strlen_gnl` returns the length of a string until 
+ * the first occurrence of a newline character or the end of the string.
+ */
 size_t	ft_strlen_gnl(const char *str)
 {
 	size_t	i;
@@ -41,6 +49,8 @@ size_t	ft_strlen_gnl(const char *str)
 	return (i);
 }
 
+// The function `ft_strjoin_gnl` concatenates two strings, `line` and `buffer`, 
+// and returns the result.
 char	*ft_strjoin_gnl(char const *line, char const *buffer)
 {
 	char	*res;
@@ -64,7 +74,7 @@ char	*ft_strjoin_gnl(char const *line, char const *buffer)
 	{
 		res[i] = buffer[j];
 		i++;
-	}	
+	}
 	res[i] = '\0';
 	free((void *)line);
 	return (res);
