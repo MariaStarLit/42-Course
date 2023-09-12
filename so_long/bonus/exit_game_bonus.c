@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 17:08:37 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/09/11 14:32:43 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/09/11 18:07:41 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	collect_items(size_t y, size_t x)
 		player()->n_collect++;
 	if (player()->n_collect == map()->n_collect)
 		mlx_put_image_to_window(map()->mlx, map()->window, \
-		map()->img.exit, clone_m()->exit_x * 64, clone_m()->exit_y * 64);
+		map()->img.exit, map()->exit_x * 64, map()->exit_y * 64);
 	map()->matrix[y][x] = '0';
 }
 

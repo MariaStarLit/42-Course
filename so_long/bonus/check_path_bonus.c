@@ -6,11 +6,33 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/08 20:09:25 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/09/11 14:33:01 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/09/11 17:53:38 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long_bonus.h"
+
+int	check_elemements(char *line, size_t len)
+{
+	int	i;
+	int	flag;
+
+	i = 0;
+	flag = 0;
+	while (i < (int)len - 1)
+	{
+		if (line[i] == 'C' || line[i] == 'E' || line[i] == 'P' || line[i] == '0'
+			|| line[i] == '1')
+			flag = 1;
+		else
+		{
+			perror("Error\nMap can only have these elements: C, E, P, 0 or 1.\n");
+			return (0);
+		}
+		i++;
+	}
+	return (flag);
+}
 
 int	valid_path(void)
 {

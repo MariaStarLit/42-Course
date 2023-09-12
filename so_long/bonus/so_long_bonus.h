@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 16:56:02 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/09/11 14:42:44 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/09/11 18:09:21 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,18 @@
 # include <stdio.h>
 # include <string.h>
 
-# define WALL "./sprites/Arvore_64.xpm"
-# define EMPTY_SPACE "./sprites/Relva_64.xpm"
-# define PLAYER_UP "./sprites/Ash_back_64.xpm"
-# define PLAYER_DOWN "./sprites/Ash_front_64.xpm"
-# define PLAYER_LEFT "./sprites/Ash_left_64.xpm"
-# define PLAYER_RIGHT "./sprites/Ash_right_64.xpm"
-# define COLLECT_1 "./sprites/Sylveon_64.xpm"
-# define COLLECT_2 "./sprites/Leafeon_64.xpm"
-# define COLLECT_3 "./sprites/Flareon_64.xpm"
-# define COLLECT_4 "./sprites/Jolteon_64.xpm"
-# define COLLECT_5 "./sprites/Umbreon_64.xpm"
-# define EXIT "./sprites/Pokeball_64.xpm"
+# define WALL "./textures/Arvore_64.xpm"
+# define EMPTY_SPACE "./textures/Relva_64.xpm"
+# define PLAYER_UP "./textures/Ash_back_64.xpm"
+# define PLAYER_DOWN "./textures/Ash_front_64.xpm"
+# define PLAYER_LEFT "./textures/Ash_left_64.xpm"
+# define PLAYER_RIGHT "./textures/Ash_right_64.xpm"
+# define COLLECT_1 "./textures/Sylveon_64.xpm"
+# define COLLECT_2 "./textures/Leafeon_64.xpm"
+# define COLLECT_3 "./textures/Flareon_64.xpm"
+# define COLLECT_4 "./textures/Jolteon_64.xpm"
+# define COLLECT_5 "./textures/Umbreon_64.xpm"
+# define EXIT "./textures/Pokeball_64.xpm"
 //keys
 # define ESC 65307
 # define A 97
@@ -75,6 +75,8 @@ typedef struct s_map
 	int			n_exit;
 	int			n_players;
 	int			n_collect;
+	size_t		exit_x;
+	size_t		exit_y;
 	t_sprites	img;
 }	t_map;
 
@@ -84,8 +86,6 @@ typedef struct s_clone
 	int			n_exit;
 	int			n_players;
 	int			n_collect;
-	size_t		exit_x;
-	size_t		exit_y;
 }	t_clone;
 
 typedef struct s_player
@@ -97,8 +97,8 @@ typedef struct s_player
 }	t_player;
 
 //main.c
-int			create_matrix(char *map_path, int flag);
-int			read_map(char *map_file, int flag);
+void		create_matrix(char *map_file);
+void		read_map(char *map_file);
 
 //util.c
 t_map		*map(void);
@@ -115,10 +115,11 @@ char		*to_long(int flag, char *buffer, int fd);
 int			check_side_walls(char **matris);
 int			check_tb_walls(char **matris);
 int			check_n_items(void);
-int			register_map_components(char **matris);
+int			register_map_components(char **matris, int flag);
 int			check_map(char **matris);
 
 //check_map_path.c
+int			check_elemements(char *line, size_t len);
 int			valid_path(void);
 void		check_map_path(char **matris, size_t y, size_t x);
 int			create_map_clone(char **matrix);

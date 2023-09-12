@@ -16,7 +16,7 @@ OBJ = $(SRC:.c=.o)
 B_OBJ = $(BONUS:.c=.o)
 
 CC = cc
-CFLAGS = -Wall -Werror -Wextra -fsanitize=address
+CFLAGS = -Wall -Werror -Wextra
 
 LIBFT = ./libft/libft.a
 MLX = ./mlx_linux/libmlx_Linux.a

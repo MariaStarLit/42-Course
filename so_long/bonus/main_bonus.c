@@ -6,35 +6,35 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 16:56:02 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/09/11 14:32:29 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/09/11 18:09:54 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long_bonus.h"
 
-int	create_matrix(char *map_path, int flag)
+void	create_matrix(char *map_file)
 {
 	size_t		i;
 	int			fd;
 
 	i = 0;
-	fd = open(map_path, O_RDONLY);
 	map()->matrix = malloc(sizeof(char *) * (map()->n_lines + 1));
 	if (map()->matrix == NULL)
 		exit(1);
+	fd = open(map_file, O_RDONLY);
 	while (i < map()->n_lines)
 	{
 		map()->matrix[i] = get_next_line(fd);
 		i++;
 	}
+	close(fd);
 	map()->matrix[i] = 0;
 	map()->len_line = ft_strlen(map()->matrix[0]);
-	close(fd);
-	flag = check_map(map()->matrix);
-	return (flag);
+	if (check_map(map()->matrix) == 1)
+		draw_window();
 }
 
-int	read_map(char *map_file, int flag)
+void	read_map(char *map_file)
 {
 	int				fd;
 	char			*line;
@@ -55,17 +55,14 @@ int	read_map(char *map_file, int flag)
 		free(line);
 	}
 	close(fd);
-	flag = create_matrix(map_file, flag);
-	return (flag);
+	create_matrix(map_file);
 }
 
 int	main(int ac, char **av)
 {
-	int				flag;
-	size_t			len;
-	char			*format;
+	size_t	len;
+	char	*format;
 
-	flag = 1;
 	format = ".ber";
 	if (ac < 2)
 	{
@@ -78,6 +75,6 @@ int	main(int ac, char **av)
 		if (!ft_strnstr(av[1], format, len))
 			perror("Error\nInvalid map format it needs to be: '.ber'.\n");
 		else
-			flag = read_map(av[1], flag);
+			read_map(av[1]);
 	}
 }

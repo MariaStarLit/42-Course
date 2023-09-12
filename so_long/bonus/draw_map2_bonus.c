@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/06 20:48:54 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/09/11 14:32:49 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/09/11 18:03:39 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,8 @@ void	draw_eevee(t_sprites *img, size_t y, size_t x)
 
 void	draw_pokeball(t_sprites *img, size_t y, size_t x)
 {
-	clone_m()->exit_y = y;
-	clone_m()->exit_x = x;
+	map()->exit_y = y;
+	map()->exit_x = x;
 	mlx_put_image_to_window(\
 	map()->mlx, map()->window, img->empty, x * 64, y * 64);
 }

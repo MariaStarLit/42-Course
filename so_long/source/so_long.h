@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 16:56:02 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/09/11 14:34:50 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/09/11 17:26:45 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,11 @@
 # include <stdio.h>
 # include <string.h>
 
-# define WALL "./sprites/Arvore_64.xpm"
-# define EMPTY_SPACE "./sprites/Relva_64.xpm"
-# define PLAYER "./sprites/Ash_front_64.xpm"
-# define COLLECT "./sprites/Sylveon_64.xpm"
-# define EXIT "./sprites/Pokeball_64.xpm"
+# define WALL "./textures/Arvore_64.xpm"
+# define EMPTY_SPACE "./textures/Relva_64.xpm"
+# define PLAYER "./textures/Ash_front_64.xpm"
+# define COLLECT "./textures/Sylveon_64.xpm"
+# define EXIT "./textures/Pokeball_64.xpm"
 //keys
 # define ESC 65307
 # define A 97
@@ -100,10 +100,11 @@ char		*to_long(int flag, char *buffer, int fd);
 int			check_side_walls(char **matris);
 int			check_tb_walls(char **matris);
 int			check_n_items(void);
-int			register_map_components(char **matris);
+int			register_map_components(char **matris, int flag);
 int			check_map(char **matris);
 
 //check_path.c
+int			check_elemements(char *line, size_t len);
 int			valid_path(void);
 void		check_map_path(char **matris, size_t y, size_t x);
 int			create_map_clone(char **matrix);

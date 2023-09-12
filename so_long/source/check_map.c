@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 17:04:14 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/09/11 12:57:11 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/09/11 17:49:38 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ int	check_n_items(void)
 	return (1);
 }
 
-int	register_map_components(char **matris)
+int	register_map_components(char **matris, int flag)
 {
 	size_t	lenl;
 	size_t	nl;
@@ -84,7 +84,10 @@ int	register_map_components(char **matris)
 	while (nl < map()->n_lines - 1)
 	{
 		lenl = 0;
-		while (lenl < map()->len_line - 1)
+		flag = check_elemements(matris[nl], map()->len_line);
+		if (flag == 0)
+			break ;
+		while (lenl < map()->len_line)
 		{
 			if (matris[nl][lenl] == 'C')
 				map()->n_collect++;
@@ -96,7 +99,7 @@ int	register_map_components(char **matris)
 		}
 		nl++;
 	}
-	return (check_n_items());
+	return (flag);
 }
 
 int	check_map(char **matris)
@@ -105,7 +108,9 @@ int	check_map(char **matris)
 		return (0);
 	if (check_tb_walls(matris) == 0)
 		return (0);
-	if (register_map_components(matris) == 0) 
+	if (register_map_components(matris, 1) == 0) 
+		return (0);
+	if (check_n_items() == 0)
 		return (0);
 	if (create_map_clone(matris) == 0)
 		return (0);

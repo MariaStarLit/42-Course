@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/15 16:56:02 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/09/11 13:57:48 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/09/11 17:59:55 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,8 +60,8 @@ void	read_map(char *map_file)
 
 int	main(int ac, char **av)
 {
-	size_t			len;
-	char			*format;
+	size_t	len;
+	char	*format;
 
 	format = ".ber";
 	if (ac < 2)
