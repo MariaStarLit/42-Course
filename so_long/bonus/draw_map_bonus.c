@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 12:46:52 by mde-avel          #+#    #+#             */
-/*   Updated: 2023/09/11 14:32:54 by mde-avel         ###   ########.fr       */
+/*   Updated: 2023/09/29 14:16:38 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,8 @@ void	draw_window(void)
 	create_images(&map()->img);
 	draw_map();
 	mlx_string_put(map()->mlx, map()->window, 30, 55, 0xffffff, "0");
-	mlx_key_hook(map()->window, hook, NULL);
+	//mlx_key_hook(map()->window, hook, NULL);
+	mlx_hook(map()->window, 02, 1L<<0, hook, NULL);
 	mlx_hook(map()->window, 17, 0, exit_game, NULL);
 	mlx_loop(map()->mlx);
 }
