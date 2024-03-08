@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/09 19:12:29 by mde-avel          #+#    #+#             */
-/*   Updated: 2024/03/04 19:11:39 by mde-avel         ###   ########.fr       */
+/*   Created: 2024/02/05 16:36:05 by mde-avel          #+#    #+#             */
+/*   Updated: 2024/02/05 16:55:44 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,8 @@ void	putting_forks(int i)
 	pthread_mutex_unlock(&info()->philo[i].mutex_fork);
 }
 
-int	philo_eats(t_philo *philo)
+int	philo_eats2(t_philo *philo)
 {
-	philo->rigth_f = philo->i;
-	if (info()->n_philo > 1)
-		philo->left_f = philo->i - 1;
-	if (philo->i == 0)
-		philo->left_f = info()->n_philo - 1;
 	if (philo->i % 2)
 	{
 		if (taking_fork(philo, philo->left_f) == 1)
@@ -61,6 +56,18 @@ int	philo_eats(t_philo *philo)
 			return (1);
 		print_logs(philo, "has taken the left fork", YELLOW, 1);
 	}
+	return (0);
+}
+
+int	philo_eats(t_philo *philo)
+{
+	philo->rigth_f = philo->i;
+	if (info()->n_philo > 1)
+		philo->left_f = philo->i - 1;
+	if (philo->i == 0)
+		philo->left_f = info()->n_philo - 1;
+	if (philo_eats2(philo) == 1)
+		return (1);
 	print_logs(philo, "is eating", GREEN, 1);
 	philo->t_last_meal = timestamp() - info()->start_time;
 	philo->n_times_ate++;

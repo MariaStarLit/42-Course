@@ -6,7 +6,7 @@
 #    By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/23 15:51:06 by mde-avel          #+#    #+#              #
-#    Updated: 2024/03/04 19:14:45 by mde-avel         ###   ########.fr        #
+#    Updated: 2024/02/05 16:46:19 by mde-avel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,13 +14,13 @@ NAME = philo
 
 CC = cc
 
-CFLAGS = -Wall -Werror -Wextra -pthread -g 
+CFLAGS = -Wall -Werror -Wextra -pthread -g
 #-fsanitize=address 
 #-fsanitize=thread
 
 RM = rm -f
 
-SRCS = eat.c main.c routine.c utils.c
+SRCS = eat.c main.c routine.c utils.c 
 
 OBJ = $(SRCS:.c=.o)
 

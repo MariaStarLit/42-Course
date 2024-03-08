@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 20:22:19 by mde-avel          #+#    #+#             */
-/*   Updated: 2024/03/04 19:11:44 by mde-avel         ###   ########.fr       */
+/*   Updated: 2024/02/05 16:45:19 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	print_logs(t_philo *philo, char *str, char *color, int check)
 {
-	long int time;
-	
+	long int	time;
+
 	pthread_mutex_lock(&info()->print);
 	if (!check || check_dead(philo) == 0)
 	{
@@ -27,8 +27,8 @@ void	print_logs(t_philo *philo, char *str, char *color, int check)
 
 int	sleep_action(long long action, t_philo *philo)
 {
-	long long begin;
-	long long time_passed;
+	long long	begin;
+	long long	time_passed;
 
 	begin = timestamp();
 	time_passed = 0;
@@ -77,7 +77,7 @@ void	*routine(void *arg)
 	philo->n_times_ate = 0;
 	if (!(philo->i % 2))
 		usleep(500);
-	while(check_dead(philo) == 0)
+	while (check_dead(philo) == 0)
 	{
 		if (philo_eats(philo) == 1)
 			break ;

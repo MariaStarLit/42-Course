@@ -6,13 +6,13 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 15:54:11 by mde-avel          #+#    #+#             */
-/*   Updated: 2024/03/04 19:07:36 by mde-avel         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:15:16 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-static int	check_args(int ac, char **av)
+int	check_args(int ac, char **av)
 {
 	int	i;
 
@@ -25,7 +25,7 @@ static int	check_args(int ac, char **av)
 			{
 				printf("Error!\nArgumentes must be a positive integer.\n");
 				return (0);
-			}	
+			}
 			i++;
 		}
 		return (1);
@@ -35,7 +35,7 @@ static int	check_args(int ac, char **av)
 	return (-1);
 }
 
-static int	get_args(int ac, char **av)
+int	get_args(int ac, char **av)
 {
 	if (check_args(ac, av) < 1)
 		return (0);
@@ -50,7 +50,7 @@ static int	get_args(int ac, char **av)
 	return (1);
 }
 
-static void	init_vars(int i)
+void	init_vars(int i)
 {
 	info()->dead = 0;
 	info()->philo = malloc(sizeof(t_philo) * info()->n_philo);
@@ -74,7 +74,7 @@ static void	init_vars(int i)
 		pthread_join(info()->philo[i].thread, NULL);
 }
 
-static void	exit_program(void)
+void	exit_program(void)
 {
 	int	i;
 
@@ -91,7 +91,7 @@ static void	exit_program(void)
 
 int	main(int ac, char **av)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (get_args(ac, av) == 0)

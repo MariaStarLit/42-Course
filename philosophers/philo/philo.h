@@ -6,7 +6,7 @@
 /*   By: mde-avel <mde-avel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 15:56:07 by mde-avel          #+#    #+#             */
-/*   Updated: 2024/03/04 19:08:32 by mde-avel         ###   ########.fr       */
+/*   Updated: 2024/02/05 16:56:35 by mde-avel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@
 typedef struct s_philo
 {
 	pthread_t		thread;
-	int 			i;
+	int				i;
 	int				n_times_ate;
 	int				left_f;
 	int				rigth_f;
@@ -58,7 +58,14 @@ typedef struct s_data
 //eat.c
 int			taking_fork(t_philo *philo, int i);
 void		putting_forks(int i);
+int			philo_eats2(t_philo *philo);
 int			philo_eats(t_philo *philo);
+
+//main.c
+int			check_args(int ac, char **av);
+int			get_args(int ac, char **av);
+void		init_vars(int i);
+void		exit_program(void);
 
 //routine.c
 void		print_logs(t_philo *philo, char *str, char *color, int check);
